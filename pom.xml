@@ -15,7 +15,8 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
+  <plugins>
+    
   <plugin>
             <groupId>org.codehaus.cargo</groupId>
 
@@ -46,7 +47,8 @@
             </configuration>
 
        </plugin>
-  <build>
+  </plugins>
+    <build>
     <finalName>project</finalName>
   </build>
 </project>
