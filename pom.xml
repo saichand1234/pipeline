@@ -15,6 +15,37 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <plugin>
+            <groupId>org.codehaus.cargo</groupId>
+
+            <artifactId>cargo-maven2-plugin</artifactId>
+
+            <version>1.6.10</version>
+
+            <configuration>
+
+                <container>
+
+                    <containerId>tomcatx</containerId>
+
+                    <type>installed</type>
+
+                    <home>/opt/tomcat/</home>
+
+                </container>
+
+                <configuration>
+
+                    <type>existing</type>
+
+                    <home>/opt/tomcat/</home>
+
+                </configuration>
+
+            </configuration>
+
+       </plugin>
   <build>
     <finalName>project</finalName>
   </build>
